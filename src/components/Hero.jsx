@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     <>
       <img src={hero} alt="" />
-      <h3>Clear, beautiful skin starts here</h3>
+      <h1>Clear, beautiful skin starts here</h1>
     </>
   );
 }

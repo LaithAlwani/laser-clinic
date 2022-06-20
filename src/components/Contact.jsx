@@ -11,6 +11,9 @@ export default function Contact() {
     }
     e.preventDefault();
     console.log(request);
+    setName("");
+    setEmail("");
+    setMessage("");
   };
   return (
     <>

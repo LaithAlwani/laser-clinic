@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <span>copyright Health Haven "email@something.com"</span>
+    </footer>
   )
 }

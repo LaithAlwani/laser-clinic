@@ -1,25 +1,67 @@
+:root{
+  --queen-blue:#416788;
+  --shadow-blue:#7389AE;
+  --cadet-blue:#B5BAD0;
+  --gray:#E0E0E2;
+  --white:rgb(241, 241, 241);
+
+  --border-radius:0.5rem
+}
+
 .main{
   min-height: 100vh;
-  margin-bottom: -75px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /*Navbar */
 nav{
   display: flex;
   padding: 0.5rem 1rem;
+  background: var(--queen-blue);
+  color: var(--white);
+}
+nav a{
+  margin-left: 0.5rem;
 }
 .logo{
-  flex-grow: 1;
+  
 }
 .links{
   font-weight: bold;
+  margin-left: auto;
 }
 /*Navbar ends*/
 
 
-/*About*/
+/*Services*/
+.card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding:0 ;
+  border: 1px solid var(--cadet-blue);
+  margin: 0.5rem 0;
+  border-radius: var(--border-radius);
+  background: white;
+}
 
-/*About ends*/
+.card .img-container{
+  padding: 0;
+}
+
+.card img{
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+.card div{
+  border-radius: 0  0.5rem  0.5rem 0;
+  padding: 1rem;
+}
+
+/*Services ends*/
 
 /*Contact*/
 .contact-form{
@@ -27,9 +69,35 @@ nav{
   flex-direction: column;
 }
 
-.contact-form > * {
-  margin: 0.5rem 0;
+input, textarea{
+  margin: 0.5rem 0 ;
+  border: none;
+  outline: none;
+  line-height: 115%;
+  padding:0.5rem;
+  font-size: 14px;
+  border-radius: var(--border-radius);
 }
-.
+button{
+  padding: 0.5rem;
+  font-weight: bold;
+  background-color: var(--queen-blue);
+  color: var(--white);
+  outline: none;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--cadet-blue);
+}
+
+@media screen and (max-width:450px) {
+  .card{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img{
+    width: 100%;
+  }
+  
+}
 
 /*Contact ends*/

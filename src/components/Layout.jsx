@@ -5,10 +5,8 @@ import Navbar from "./Navbar";
 export default function Layout({ children }) {
   return (
     <>
-      <main className="main">
-        <Navbar />
-        {children}
-      </main>
+      <Navbar />
+      <main className="main">{children}</main>
       <Footer />
     </>
   );

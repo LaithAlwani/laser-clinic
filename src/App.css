@@ -1,4 +1,35 @@
 .main{
   min-height: 100vh;
-  margin-bottom: -35px;
+  margin-bottom: -75px;
 }
+
+/*Navbar */
+nav{
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+.logo{
+  flex-grow: 1;
+}
+.links{
+  font-weight: bold;
+}
+/*Navbar ends*/
+
+
+/*About*/
+
+/*About ends*/
+
+/*Contact*/
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form > * {
+  margin: 0.5rem 0;
+}
+.
+
+/*Contact ends*/

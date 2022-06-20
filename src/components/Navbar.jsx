@@ -2,9 +2,10 @@ export default function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <a href="#about">LaserClinic</a>
+        LaserClinic
       </div>
       <div className="links">
+        <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </div>

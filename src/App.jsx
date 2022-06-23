@@ -18,7 +18,7 @@ function App() {
         <div className="services section" id="services">
           <Services />
         </div>
-        <div className="contact section" id="contact">
+        <div className="section" id="contact">
           <Contact />
         </div>
       </Layout>

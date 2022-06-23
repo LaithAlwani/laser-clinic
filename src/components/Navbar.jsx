@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const hash = window.location.hash.split("#")
-  const [path, setPath] = useState(hash[1]);
+  const [path, setPath] = useState(hash[1] || null) ;
   
 
   useEffect(()=>{
-    console.log(path[1])
-  },[path])
+    
+  },[])
   return (
     <nav>
       <div className="logo">

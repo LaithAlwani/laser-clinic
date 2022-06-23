@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        
+      <div className="hero">
+        <Hero />
+      </div>
         <div className="about section" id="about">
           <About />
         </div>

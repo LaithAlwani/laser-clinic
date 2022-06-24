@@ -11,7 +11,7 @@ export default function Services() {
         <div className="img-container">
           <img src={lhr} alt="" />
         </div>
-        <div>
+        <div  className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
           <p>
             Administered by a medical doctor and can help remove unwanted
@@ -23,7 +23,7 @@ export default function Services() {
         <div className="img-container">
           <img src={image} alt="" />
         </div>
-        <div>
+        <div className="card-content">
           <h3>LASER SKIN TREATMENTS</h3>
           <p>
             Treat pigmentation, skin irregularities, acne scars and the signs of
@@ -35,7 +35,7 @@ export default function Services() {
         <div className="img-container">
           <img src={botox} alt="" />
         </div>
-        <div>
+        <div  className="card-content">
           <h3>LASER HAIR REMOVAL</h3>
           <p>
             No matter what your skin type, we can help you achieve a more

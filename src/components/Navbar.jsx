@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {MdMenu} from "react-icons/md"
 
 export default function Navbar() {
   const hash = window.location.hash.split("#")
@@ -18,6 +19,20 @@ export default function Navbar() {
         <a href="#services" className={path === "services"? "active":"" } onClick={()=>setPath("services")} >Services</a>
         <a href="#contact" className={path === "contact"? "active":""} onClick={()=>setPath("contact")}>Contact</a>
       </div>
+      <MobileNav />
     </nav>
   );
+}
+
+const MobileNav = () => {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+  return (
+    <div className="mobile-nav">
+      <span onClick={toggleMenu}><MdMenu size={25} /></span>
+      
+    </div>
+  )
 }

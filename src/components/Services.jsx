@@ -9,7 +9,7 @@ export default function Services() {
       <h2>Services:</h2>
       <Card>
         <div className="img-container">
-          <img src={lhr} alt="" />
+          <img src={lhr} alt="botox" />
         </div>
         <div  className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
@@ -21,7 +21,7 @@ export default function Services() {
       </Card>
       <Card>
         <div className="img-container">
-          <img src={image} alt="" />
+          <img src={image} alt="laser treatments" />
         </div>
         <div className="card-content">
           <h3>LASER SKIN TREATMENTS</h3>
@@ -33,7 +33,7 @@ export default function Services() {
       </Card>
       <Card>
         <div className="img-container">
-          <img src={botox} alt="" />
+          <img src={botox} alt="laser hair removal" />
         </div>
         <div  className="card-content">
           <h3>LASER HAIR REMOVAL</h3>

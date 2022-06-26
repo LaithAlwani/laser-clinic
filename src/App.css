@@ -12,10 +12,10 @@
   min-height: 100vh;
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem 1rem 1rem;
 }
 .section{
-  padding: 0.5rem 0;
+  padding: 3rem 0 0;
 }
 
 .bold{
@@ -23,6 +23,9 @@
 }
 /*Navbar */
 nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -51,20 +54,6 @@ nav .mobile-nav{
 }
 .links .active{
   font-weight: bold;
-}
-
-.fab{
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: var(--queen-blue);
-  color: var(--white);
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /*Navbar ends*/
 
@@ -182,11 +171,11 @@ button{
 
 /*footer*/
 footer{
-  background: var(--cadet-blue);
-  color: var(--queen-blue);
+  background: var(--queen-blue);
+  color: var(--white);
   text-align: center;
   padding: 0.5rem 0 ;
-  border-top: 1px solid var(--queen-blue);
+  border-top: 1px solid var(--cadet-blue);
 }
 
 footer .social-links > *{

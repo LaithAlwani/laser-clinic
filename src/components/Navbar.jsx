@@ -7,7 +7,6 @@ export default function Navbar() {
   const hash = window.location.hash.split("#")
   const [path, setPath] = useState(hash[1] || null);
   
-
   return (
     <nav>
       <div className="logo">

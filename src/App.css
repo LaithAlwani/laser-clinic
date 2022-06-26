@@ -212,9 +212,9 @@ footer span {
   border-radius: var(--border-radius)  var(--border-radius) 0 0;
 
   }
-  .card div{
+  .card .card-content, .contact-icons{
     width: 100%;
-  }
+  } 
 
   .card svg{
   

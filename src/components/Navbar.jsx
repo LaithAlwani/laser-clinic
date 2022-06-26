@@ -1,9 +1,12 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import {MdMenu} from "react-icons/md"
+import Fab from "./Fab";
 
 export default function Navbar() {
   const hash = window.location.hash.split("#")
-  const [path, setPath] = useState(hash[1] || null) ;
+  const [path, setPath] = useState(hash[1] || null);
+  
 
   return (
     <nav>
@@ -16,6 +19,7 @@ export default function Navbar() {
         <a href="#contact" className={path === "contact"? "active":""} onClick={()=>setPath("contact")}>Contact</a>
       </div>
       <MobileNav />
+      <Fab />
     </nav>
   );
 }

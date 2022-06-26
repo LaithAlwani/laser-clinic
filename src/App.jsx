@@ -7,9 +7,9 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="app">
       <Layout>
-      <div className="hero">
+      <div className="hero" id="hero">
         <Hero />
       </div>
         <div className="about section" id="about">
@@ -21,6 +21,7 @@ function App() {
         <div className="section" id="contact">
           <Contact />
         </div>
+        
       </Layout>
     </div>
   );

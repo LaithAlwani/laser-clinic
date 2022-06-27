@@ -38,7 +38,7 @@ nav a {
 }
 
 nav .mobile-nav{
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -243,6 +243,9 @@ footer span {
 /*media quries*/
 
 @media screen and (max-width: 600px) {
+  nav .mobile-nav{
+    display: flex;
+  }
   nav .links {
     display: none;
   }

@@ -8,8 +8,7 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const handleClick = (link) => {
-    setPath(link);
+  const handleClick = () => {
     toggleMenu();
   };
   return (
@@ -22,7 +21,10 @@ export default function Navbar() {
         <span onClick={toggleMenu}>
           <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </span>
-        <div className={isOpen ? "mobile-nav-links open-nav" : "mobile-nav-links"}>
+        <div
+          onClick={handleClick}
+          className={isOpen ? "mobile-nav-links open-nav" : "mobile-nav-links"}
+        >
           {<NavLinks />}
         </div>
       </div>

@@ -119,7 +119,7 @@ nav .open-nav {
 /*hero*/
 .hero {
   width: 100%;
-  background-image: url("images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   height: 300px;
   background-position: top;
   background-repeat: no-repeat;

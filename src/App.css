@@ -2,9 +2,7 @@
   --queen-blue: #416788;
   --shadow-blue: #7389ae;
   --cadet-blue: #b5bad0;
-  --gray: #efefef;
-  --white: rgb(241, 241, 241);
-
+  --white:rgb(242, 242, 242);
   --border-radius: 0.5rem;
 }
 
@@ -15,22 +13,29 @@
   padding: 5rem 1rem 1rem;
 }
 .section {
-  padding: 3rem 0 0;
+  padding: 4rem 0 0;
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
+
 /*Navbar */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   padding: 0.5rem;
   background: var(--queen-blue);
   color: var(--white);
+}
+
+nav .nav-container{
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
@@ -58,8 +63,10 @@ nav .open-nav {
 }
 
 .logo {
+  max-width: 125px;
 }
-.links .active {
+.active {
+  font-size: large;
   font-weight: bold;
 }
 /*Navbar ends*/
@@ -87,7 +94,6 @@ nav .open-nav {
   width: 100%;
   height: 0.1rem;
   background-color: var(--white);
-
   border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -149,7 +155,6 @@ nav .open-nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   border: 1px solid var(--cadet-blue);
   margin: 0.5rem 0;
   border-radius: var(--border-radius);
@@ -168,7 +173,7 @@ nav .open-nav {
 }
 .card .card-content {
   border-radius: 0 0.5rem 0.5rem 0;
-  padding: 1rem;
+  padding: 0 1rem;
   width: 70%;
 }
 
@@ -203,12 +208,13 @@ textarea {
   margin: 0.5rem 0;
   border: none;
   outline: none;
-  line-height: 115%;
+  line-height: 140%;
   padding: 0.5rem;
   font-size: 14px;
   border-radius: var(--border-radius);
   border: 1px solid var(--cadet-blue);
   resize: none;
+  font-family: "roboto", sans-serif;
 }
 button {
   padding: 0.5rem;
@@ -243,8 +249,12 @@ footer span {
 /*media quries*/
 
 @media screen and (max-width: 600px) {
+  nav .nav-container{
+    /* align-items: flex-start; */
+  }
   nav .mobile-nav{
     display: flex;
+    
   }
   nav .links {
     display: none;

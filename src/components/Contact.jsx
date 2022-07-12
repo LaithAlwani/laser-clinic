@@ -32,7 +32,7 @@ export default function Contact() {
           <p>613 820 3694</p>
 
           <MdOutlineMail />
-          <p>healthhavenottawa@gmail.com</p>
+          <p>HHestheticsottawa@gmail.com</p>
         </div>
 
         <form onSubmit={handleSubmit} className="contact-form">

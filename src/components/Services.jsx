@@ -1,15 +1,13 @@
 import Card from "./Card";
-import image from "../images/lhr.png";
-import lhr from "../images/lhr2.jpeg";
-import botox from "../images/botox.jpg";
+
 
 export default function Services() {
   return (
     <>
-      <h2>Services:</h2>
+      <h2>Services</h2>
       <Card>
         <div className="img-container">
-          <img src={lhr} alt="botox" />
+          <img src="/images/botox.jpg" alt="botox" />
         </div>
         <div  className="card-content">
           <h3>BOTOX & DERMAL FILLERS</h3>
@@ -21,7 +19,7 @@ export default function Services() {
       </Card>
       <Card>
         <div className="img-container">
-          <img src={image} alt="laser treatments" />
+          <img src="/images/lhr.png" alt="laser treatments" />
         </div>
         <div className="card-content">
           <h3>LASER SKIN TREATMENTS</h3>
@@ -33,7 +31,7 @@ export default function Services() {
       </Card>
       <Card>
         <div className="img-container">
-          <img src={botox} alt="laser hair removal" />
+          <img src="/images/lhr2.jpeg" alt="laser hair removal" />
         </div>
         <div  className="card-content">
           <h3>LASER HAIR REMOVAL</h3>
